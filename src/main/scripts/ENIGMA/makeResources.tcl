@@ -18,6 +18,7 @@ proc makeUsers {  DOMAIN NS } {
 
 createUser $DOMAIN   Other affdis "${NS}/AFFDIS" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
 createUser $DOMAIN   Other barcelona  "${NS}/Barcelona" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
+createUser $DOMAIN   Other bidirect "${NS}/BiDirect" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
 createUser $DOMAIN   Other brcdecc "${NS}/BRCDECC" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
 createUser $DOMAIN   Other calgary "${NS}/Calgary" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
 createUser $DOMAIN   Other cardiff "${NS}/Cardiff" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
@@ -61,6 +62,7 @@ proc makeNameSpaces { NS } {
 
 createNameSpace $NS/AFFDIS
 createNameSpace $NS/Barcelona
+createNameSpace $NS/BiDirect
 createNameSpace $NS/Edinburgh
 createNameSpace $NS/BRCDECC
 createNameSpace $NS/Calgary
@@ -100,7 +102,6 @@ createNameSpace $NS/Tokyo
 
 # The custom sFTP service is in the network.tcl
 set PROJ "proj-enigma_mdd-1128.4.53"
-#set PROJ "proj-enigma-1130.0.2.3"
 
 # Create ENIGMA external user role
 authorization.role.create :ifexists ignore :role VicNode-Admin:enigma-external :description "This role is granted to the ENIGMA  authentication domain where external entities have accounts. The role is then used to exclude this domain from all network services except the specialised sFTP service constraining users to home directories."
