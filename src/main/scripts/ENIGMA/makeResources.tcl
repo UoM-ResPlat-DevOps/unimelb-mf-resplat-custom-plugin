@@ -54,6 +54,7 @@ createUser $DOMAIN   Other singapore "${NS}/Singapore" lianne.schmaal@unimelb.ed
 createUser $DOMAIN   Other stanford "${NS}/Stanford" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
 createUser $DOMAIN   Other sydney "${NS}/Sydney" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
 createUser $DOMAIN   Other tokyo "${NS}/Tokyo" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
+createUser $DOMAIN   Other ukbiobank "${NS}/UKBioBank" lianne.schmaal@unimelb.edu.au "Lianne Schmaal"
 
 }
 
@@ -98,6 +99,7 @@ createNameSpace $NS/Singapore
 createNameSpace $NS/Stanford
 createNameSpace $NS/Sydney
 createNameSpace $NS/Tokyo
+createNameSpace $NS/UKBioBank
 }
 
 # The custom sFTP service is in the network.tcl
